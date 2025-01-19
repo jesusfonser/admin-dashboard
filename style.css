@@ -34,4 +34,20 @@ body{
 .header{
     background-color: green;
     grid-column: 2 / 3;
+    display: grid;
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-content: center;
+}
+
+.header-top li{
+    display: inline;
+    padding: 5px;
+}
+
+.header-searchbar input{
+    width: 80%;
 }
