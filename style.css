@@ -51,3 +51,18 @@ body{
 .header-searchbar input{
     width: 80%;
 }
+
+.header-bottom{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.header-saludo{
+    grid-column: 1 / 2;
+    background-color: red;
+}
+
+.header-buttons{
+    grid-column: 3 / 4;
+    background-color: yellow;
+}
