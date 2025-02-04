@@ -58,6 +58,17 @@ body{
 .main-side{
     background-color: orange;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 6fr 6fr;
+    gap: 5px;
+}
+
+.main-side-1{
+    background-color: yellow;
+}
+
+.main-side-2{
+    background-color: grey;
 }
 
 .header{
