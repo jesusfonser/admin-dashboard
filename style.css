@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    font-family: "robotoregular";
+}
+
 body{
     margin: 0;
     display: grid;
