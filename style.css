@@ -15,8 +15,8 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
-    height: 100vh;
+    grid-template-rows: 1fr 6fr;
+
 }
 
 .sidebar{
@@ -27,6 +27,7 @@ body{
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: 1fr 4fr 4fr;
+    z-index: 1;
 }
 
 .sidebar-logo{
@@ -62,7 +63,6 @@ body{
 }
 
 .main-content{
-    background-color: grey;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -70,7 +70,6 @@ body{
 }
 
 .main-grid{
-    background-color: yellow;
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 13fr;
@@ -89,7 +88,6 @@ body{
 }
 
 .main-side{
-    background-color: orange;
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 6fr 6fr;
@@ -105,26 +103,44 @@ body{
 }
 
 .header{
-    background-color: green;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 5px 30px 0px grey;
 }
 
 .header-top{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-content: center;
+    gap: 20px;
 }
 
-.header-top li{
-    display: inline;
-    padding: 5px;
+.header-searchbar{
+    display: grid;
+    grid-template-columns: 50px 500px;
+    align-items: center;
+    padding: 8px;
 }
 
-.header-searchbar input{
-    width: 80%;
+.lupa{
+    justify-self: end;
+    padding: 10px;
+}
+
+.header-campana{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.nombre{
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-self: start;
+    padding-left: 20px;
 }
 
 .header-bottom{
@@ -134,10 +150,64 @@ body{
 
 .header-saludo{
     grid-column: 1 / 2;
-    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.miniavatar.grande{
+    height: 65px;
+    width: 65px;
+    border-radius: 30px;
+    grid-row: 1/3;
+    justify-self: center;
+}
+
+.sobrenombre{
+    align-self: end;
+}
+
+.header-saludo > .nombre{
+    padding-left: 0;
+    padding-top: 5px;
+    font-size: 1.3rem;
 }
 
 .header-buttons{
     grid-column: 3 / 4;
-    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+}
+
+button{
+    background-color: #1992d4;
+    border-style: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    width: 100px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+input{
+    border-style: none;
+    border-radius: 20px;
+    background-color: lightblue;
+    height: 25px;
+    outline-width: 0;
+    padding: 8px;
+}
+
+.miniavatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
 }
