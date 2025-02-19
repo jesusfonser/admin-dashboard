@@ -62,6 +62,10 @@ body{
     width: 30px;
 }
 
+h2{
+    margin-left: 15px;
+}
+
 .main-content{
     grid-column: 2 / 3;
     display: grid;
