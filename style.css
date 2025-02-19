@@ -76,15 +76,47 @@ body{
 }
 
 .main-grid-real{
-    background-color: rgb(27, 202, 100);
     grid-row: 2 / 3;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 225px);
+    padding: 10px;
 }
 
 .main-grid-carta{
-    background-color: blueviolet;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 4px lightgrey;
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    overflow: hidden;   
+}
+
+.carta-franja{
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: yellow;
+}
+
+.carta-title{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.carta-texto{
+    align-self: start;
+    margin: 0;
+    margin-left: 10px;
+    color: grey;
+}
+
+.carta-iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: end;
 }
 
 .main-side{
