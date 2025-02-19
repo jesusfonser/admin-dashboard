@@ -1,152 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Admin Dashboard</title>
-    </head>
 
-    <body>
-        <div class="sidebar">
-            <div class="sidebar-logo">
-                <img class="dash" src="./images/view-dashboard.svg">
-                   <span style="font-size: 24px;">Dashboard</span></div>
-            <div class="sidebar-main">
-                <ul>
-                    <li><img class="bulletimg" src="./images/home.svg">
-                        Home
-                    </li>
-                    <li><img class="bulletimg" src="./images/card-account-details-outline.svg">
-                        Profile
-                    </li>
-                    <li><img class="bulletimg" src="./images/message.svg"> 
-                        Messages</li>
-                    <li><img class="bulletimg" src="./images/clock-time-four.svg"> 
-                        History</li>
-                    <li><img class="bulletimg" src="./images/file-multiple.svg">
-                         Tasks</li>
-                    <li><img class="bulletimg" src="./images/account-group.svg"> 
-                        Communities</li>
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img class="dash" src="./images/view-dashboard.svg">
+            <span style="font-size: 24px;">Dashboard</span>
+        </div>
+        <div class="sidebar-main">
+            <ul>
+                <li><img class="bulletimg" src="./images/home.svg">
+                    Home
+                </li>
+                <li><img class="bulletimg" src="./images/card-account-details-outline.svg">
+                    Profile
+                </li>
+                <li><img class="bulletimg" src="./images/message.svg">
+                    Messages</li>
+                <li><img class="bulletimg" src="./images/clock-time-four.svg">
+                    History</li>
+                <li><img class="bulletimg" src="./images/file-multiple.svg">
+                    Tasks</li>
+                <li><img class="bulletimg" src="./images/account-group.svg">
+                    Communities</li>
+            </ul>
+        </div>
+        <div class="sidebar-others">
+            <ul>
+                <li><img class="bulletimg" src="./images/cog.svg">
+                    Settings</li>
+                <li><img class="bulletimg" src="./images/help-box.svg">
+                    Support</li>
+                <li><img class="bulletimg" src="./images/shield-check.svg">
+                    Privacy</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-top">
+            <div class="header-searchbar">
+                <img class="bulletimg lupa" src="./images/magnify.svg">
+                <input>
             </div>
-            <div class="sidebar-others">
-                <ul>
-                    <li><img class="bulletimg" src="./images/cog.svg">
-                        Settings</li>
-                    <li><img class="bulletimg" src="./images/help-box.svg">
-                        Support</li>
-                    <li><img class="bulletimg" src="./images/shield-check.svg">
-                         Privacy</li>
-                </ul>
+            <div class="header-campana">
+                <img class="bulletimg" src="./images/bell-alert-outline.svg">
+                <img class="miniavatar" src="./images/avatar.png">
+                <span class="nombre">Antonio Pérez</span>
             </div>
         </div>
-
-        <div class="header">
-            <div class="header-top">
-                <div class="header-searchbar">
-                    <img class="bulletimg lupa" src="./images/magnify.svg">
-                    <input>
-                </div>
-                <div class="header-campana">
-                    <img class="bulletimg" src="./images/bell-alert-outline.svg">
-                    <img class="miniavatar" src="./images/avatar.png">
-                    <span class="nombre">Antonio Pérez</span>
-                </div>
+        <div class="header-bottom">
+            <div class="header-saludo">
+                <img class="miniavatar grande" src="./images/avatar.png">
+                <span class="sobrenombre">A las buenas tardes...</span>
+                <span class="nombre">Antonio Pérez</span>
             </div>
-            <div class="header-bottom">
-                <div class="header-saludo">
-                    <img class="miniavatar grande" src="./images/avatar.png">
-                    <span class="sobrenombre">A las buenas tardes...</span>
-                    <span class="nombre">Antonio Pérez</span>
+            <div></div>
+            <div class="header-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main-grid">
+            <h2>Tus proyectos</h2>
+            <div class="main-grid-real">
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 1</h3>
+                    <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque
+                        quae, laborum ullam accusamus.
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
                 </div>
-                <div></div>
-                <div class="header-buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 2</h3>
+                    <p class="carta-texto">¿A quién no le va a gustar un baptisterio romano del siglo primero?
+                        ¿A quién no le va a gustar?
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
+                </div>
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 3</h3>
+                    <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque
+                        quae, laborum ullam accusamus.
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
+                </div>
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 4</h3>
+                    <p class="carta-texto">Con toda la puestada con toda la puestada ayer pillé dos y hoy otros dos.
+                        Ya me queda menos de media una me queda.
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
+                </div>
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 5</h3>
+                    <p class="carta-texto">Never gonna give you up, never gonna let you down, never gonna nosequé and
+                        desert you.
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
+                </div>
+                <div class="main-grid-carta">
+                    <div class="carta-franja"></div>
+                    <h3 class="carta-title">Título 6</h3>
+                    <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque
+                        quae, laborum ullam accusamus.
+                    </p>
+                    <div class="carta-iconos">
+                        <img class="bulletimg" src="./images/star-plus-outline.svg">
+                        <img class="bulletimg" src="./images/eye-plus-outline.svg">
+                        <img class="bulletimg" src="./images/share-variant.svg">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="main-content">
-            <div class="main-grid">
-                <h2>Tus proyectos</h2>
-                <div class="main-grid-real">
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 1</h3>
-                            <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque quae, laborum ullam accusamus. 
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 2</h3>
-                            <p class="carta-texto">¿A quién no le va a gustar un baptisterio romano del siglo primero?
-                                ¿A quién no le va a gustar?
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 3</h3>
-                            <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque quae, laborum ullam accusamus. 
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 4</h3>
-                            <p class="carta-texto">Con toda la puestada con toda la puestada ayer pillé dos y hoy otros dos.
-                                Ya me queda menos de media una me queda.
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 5</h3>
-                            <p class="carta-texto">Never gonna give you up, never gonna let you down, never gonna nosequé and desert you. 
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
-                    <div class="main-grid-carta">
-                        <div class="carta-franja"></div>
-                            <h3 class="carta-title">Título 6</h3>
-                            <p class="carta-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga atque quae, laborum ullam accusamus. 
-                            </p>
-                        <div class="carta-iconos">
-                            <img class="bulletimg" src="./images/star-plus-outline.svg">
-                            <img class="bulletimg" src="./images/eye-plus-outline.svg">
-                            <img class="bulletimg" src="./images/share-variant.svg">
-                        </div>
-                    </div>
+        <div class="main-side">
+            <h2>Anuncios</h2>
+            <div class="main-side-1">
+                <div class="anuncio">
+                    <span>Hola que tal</span>
+                    <p>Me cago me meo me tiro un peo me limpio el culo con lo sinco deo
+                        ai mama que felisida.
+                    </p>
+                </div>
+                <hr>
+                <div class="anuncio">
+                    <span>Hola que tal</span>
+                    <p>Me cago me meo me tiro un peo me limpio el culo con lo sinco deo
+                        ai mama que felisida.
+                    </p>
+                </div>
+                <hr>
+                <div class="anuncio">
+                    <span>Hola que tal</span>
+                    <p>Me cago me meo me tiro un peo me limpio el culo con lo sinco deo
+                        ai mama que felisida.
+                    </p>
                 </div>
             </div>
-            <div class="main-side">
-                <h2>Que tal</h2>
-                <div class="main-side-1"></div>
-                <div class="main-side-2"></div>
-            </div>
+            <div class="main-side-2"></div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

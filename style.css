@@ -131,7 +131,39 @@ h2{
 }
 
 .main-side-1{
-    background-color: yellow;
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: 1fr 18px 1fr 18px 1fr;
+    padding: 25px;
+}
+
+.anuncio{
+    display: grid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: space-between;
+}
+
+.anuncio > span{
+    font-weight: bold;
+    
+}
+
+.anuncio > p{
+    font-size: 0.9rem;
+    color: grey;
+    margin: 0;
+}
+
+hr{
+    border: 1px solid lightgrey;
+    width: 100%;
+    align-self: end;
+}
+
+#hrinv{
+   border: 0px solid white;
 }
 
 .main-side-2{
